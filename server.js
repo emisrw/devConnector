@@ -5,6 +5,7 @@ const app = express();
 connectDB();
 // Init Middleware
 app.use(express.json({ extend: true }));
+
 app.get("/", (req, res) => res.send("Api Running"));
 
 // Define routers
