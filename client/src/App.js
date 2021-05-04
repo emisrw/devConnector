@@ -12,9 +12,11 @@ import { loadUser } from "./actions/auth";
 import setAuthError from "./utils/setAuthToken";
 import "./App.css";
 
-if (localStorage.token) {
-  setAuthError(localStorage.token);
-}
+// if (localStorage.token) {
+//   setAuthError(localStorage.token);
+// }
+//localStorage.setItem("bgcolor", "red");
+console.log(localStorage.getItem("bgcolor"));
 
 const App = () => {
   useEffect(() => {

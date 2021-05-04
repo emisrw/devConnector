@@ -25,6 +25,7 @@ export default function (state = initialState, action) {
 
     case REGISTER_SUCCESS:
       localStorage.setItem("token", payload.token);
+      localStorage.setItem("test_value", "red");
       return { ...state, ...payload, isAuthenticated: true, loading: false };
     case AUTH_ERROR:
     case REGISTER_FAIL:
